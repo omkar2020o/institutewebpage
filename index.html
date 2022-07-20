@@ -1,0 +1,312 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Swapnupurti classes</title>
+  <link rel="stylesheet" href="css/navbar.css">
+  <link rel="stylesheet" href="css/indexcss.css">
+  <link rel="stylesheet" href="css/footer.css">
+</head>
+
+<body>
+  <nav class="navbar">
+    <!-- LOGO -->
+    <div class="logo">SWAPNPURTI CLASSES</div>
+    <!-- NAVIGATION MENU -->
+    <ul class="nav-links">
+      <!-- USING CHECKBOX HACK -->
+      <input type="checkbox" id="checkbox_toggle" />
+      <label for="checkbox_toggle" class="hamburger">&#9776;</label>
+      <!-- NAVIGATION MENUS -->
+      <div class="menu">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="aboutus.html">About</a></li>
+        <li class="services">
+          <a href="#">Students corner</a>
+          <!-- DROPDOWN MENU -->
+          <ul class="dropdown">
+            <li><a href="#">Addmision form</a></li>
+            <li><a href="#">Pay fees</a></li>
+            <li><a href="#">feedback form</a></li>
+          </ul>
+        </li>
+        <li><a href="photos.html">photos</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </div>
+    </ul>
+  </nav>
+
+  <!-- Slideshow container -->
+  <div class="slideshow-container">
+
+    <!-- Full-width images with number and caption text -->
+    <div class="mySlides fade">
+      <div class="numbertext">1 / 3</div>
+      <img src="img/img5.png" style="width:100%">
+    </div>
+
+    <div class="mySlides fade">
+      <div class="numbertext">2 / 3</div>
+      <img src="img/img6.png" style="width:100%">
+    </div>
+
+    <div class="mySlides fade">
+      <div class="numbertext">3 / 3</div>
+      <img src="img/img4.png" style="width:100%">
+    </div>
+
+    <!-- Next and previous buttons -->
+    <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+    <a class="next" onclick="plusSlides(1)">&#10095;</a>
+  </div>
+  <br>
+
+
+  <script>
+    let slideIndex = 1;
+    showSlides(slideIndex);
+
+    // Next/previous controls
+    function plusSlides(n) {
+      showSlides(slideIndex += n);
+    }
+
+    // Thumbnail image controls
+
+    function showSlides(n) {
+      let i;
+      let slides = document.getElementsByClassName("mySlides");
+      let dots = document.getElementsByClassName("dot");
+      if (n > slides.length) { slideIndex = 1 }
+      if (n < 1) { slideIndex = slides.length }
+      for (i = 0; i < slides.length; i++) {
+        slides[i].style.display = "none";
+      }
+      for (i = 0; i < dots.length; i++) {
+        dots[i].className = dots[i].className.replace(" active", "");
+      }
+      slides[slideIndex - 1].style.display = "block";
+      dots[slideIndex - 1].className += " active";
+    }
+  </script>
+  <!--Intro img -->
+  <div class="himg">
+    <a href="Addmision.html"><img class="imgh" src="img/img4.jpg"></a>
+  </div>
+
+  <!--Callout box i.e-addmision open-->
+  <div class="callout">
+    <div class="callout-header">Contact us For Addmision</div>
+    <span class="closebtn" onclick="this.parentElement.style.display='none';">x</span>
+    <div class="callout-container">
+      <p>Addmision open for Foundation batches.<a href="#">Contact Us </a> or close it if it is in your way.</p>
+    </div>
+  </div>
+
+  <!--top function button-->
+  <button onclick="topFunction()" id="myBtn" title="Go to top">Top</button>
+
+  <script>
+    //Get the button
+    var mybutton = document.getElementById("myBtn");
+
+    // When the user scrolls down 20px from the top of the document, show the button
+    window.onscroll = function () { scrollFunction() };
+
+    function scrollFunction() {
+      if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+        mybutton.style.display = "block";
+      } else {
+        mybutton.style.display = "none";
+      }
+    }
+
+    // When the user clicks on the button, scroll to the top of the document
+    function topFunction() {
+      document.body.scrollTop = 0;
+      document.documentElement.scrollTop = 0;
+    }
+  </script>
+
+  <div class="box">
+    <div class="announcements">
+      <h class="b1">Announcements</h>
+      <marquee direction="up">IOQA & IOQC 2021-22 ANSWER KEY & SOLUTIONS ANOW AVAILABLE<br><br>
+        UCDI RESULT AVAILABLE<br><br>
+        REGISTRATION OPEN FOR OCS EXAM APPLY NOW!!</marquee>
+    </div>
+
+    <div class="newsevents">
+      <h class="b1">News & Events</h>
+      <marquee direction="up">Addmision open for NEET crash cource<br>
+        <br>Sendoff of class 12 batch on 23-08-2022<br><br>
+        sendoff of class 10 batch on 25-08-2022
+      </marquee>
+    </div>
+  </div>
+
+  <!--united advantages-->
+  <div>
+    <h1 class="ua">SWAPNPURTI Advantage</h1>
+    <div class="uah">
+      <h2>Stay ahead with all-round</h2>
+      <h2>performance in your chosen</h2>
+      <h2>stream</h2>
+    </div>
+
+    <div>
+
+      <!--left side-->
+      <div class="left">
+        <!--Highly Qualified & Experienced Faculty-->
+        <div class="as">
+          <img class="asi" src="img/hq.png">
+          <div class="l1">
+            <h class="as1">Highly Qualified & Experienced<br> Faculty</h>
+            <p class="as2">With a large pool of dedicated, highly qualified and experienced faculty members, we maintain
+              an optimal student-faculty ratio to attend every student with extra care. Our faculty walks an extra mile
+              to ensure that you do not miss getting the highest benchmark in school, entrance and other competitive
+              exams.</p>
+          </div>
+        </div>
+
+        <!--Comprehensive Study Material-->
+        <div class="az">
+          <img class="asi" src="img/csm.png">
+          <div>
+            <h class="az1">Comprehensive <br>Study Material</h>
+            <p class="az2">Our most comprehensive study material is curated by subject matter experts that empowers you
+              with an in-depth understanding of all crucial topics from various subjects to help you stay ahead of the
+              curve.</p>
+          </div>
+        </div>
+      </div>
+
+
+      <!--right side-->
+      <div class="right">
+        <!--excellent track record-->
+        <div class="aq">
+          <img class="aqi" src="img/etr.png">
+          <div class="ri">
+            <h class="aq1">Excellent Track <br>Record</h>
+            <p class="aq2">We have maintained an excellent track record for over three decades in delivering outstanding
+              results in various medical and engineering entrance exams, and competitive and scholarship exams such as
+              NTSE, KVPY, and Olympiads every year.</p>
+          </div>
+        </div>
+
+        <!--integrated teaching-->
+        <div class="aw">
+          <img class="it" src="img/it.png">
+          <div>
+            <h class="aw1">Integrated<br> Teaching</h>
+            <p class="aw2">Our integrated teaching approach not only makes you shine in your school/ board exams but
+              also ensures that you are listed as a top achiever in competitive exams like JEE, NEET, Olympiads, NTSE,
+              KVPY etc.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!--our services-->
+  <div class="services1">
+    <div>
+      <h1 class="os">OUR SERVICES</h1>
+      <br>
+    </div>
+    <div class="container2">
+      <div class="os1">
+        <img class="osi1" src="img/os1.jpg">
+        <h class="osh1">Learning</h>
+      </div>
+      <div class="os2">
+        <img class="osi2" src="img/os2.jpg">
+        <h class="osh1">Excellence</h>
+      </div>
+      <div class="os3">
+        <img class="osi3" src="img/os3.jpg">
+        <h class="osh1">Innovation</h>
+      </div>
+    </div>
+  </div>
+
+  <!--Our reviews-->
+  <div class="review">
+    <div>
+      <h1 class="rh1">OUR REVIEWS</h1>
+    </div>
+    <!--student1-->
+    <div class="s1">
+      <div class="sh1">
+        <h style="font-size: 30px; color: rgba(100,200,200,1);">&bdquo;</h><br><br>
+        <p style="font-weight: bold; color: royalblue;">A Very good teaching staff all teacher are very good and
+          friendly especially salman sir is very friendly with the students.</p>
+        <br>
+        <h class="shh">--Nagapure rohan(86.15)</h> <br>
+        <h style="font-size: 30px; color: rgba(100,200,200,1);">&bdquo;</h><br><br>
+      </div>
+    </div>
+    <!--student2-->
+    <div class="s2">
+      <div class="sh1">
+        <h style="font-size: 30px; color: rgba(100,200,200,1);">&bdquo;</h><br><br>
+        <p style="font-weight: bold; color: royalblue;">i'm really happy with the teacher and staff which always help me
+          with whatever i need. also the staff is very friendly</p><br>
+        <h class="shh">--mali yash (99.8)</h><br>
+        <h style="font-size: 30px; color: rgba(100,200,200,1);">&bdquo;</h><br><br>
+      </div>
+    </div>
+    <!--student3-->
+    <div class="s3">
+      <div class="sh1">
+        <h style="font-size: 30px; color: rgba(100,200,200,1);">&bdquo;</h><br><br>
+        <p style="font-weight: bold; color: royalblue;">i'm really happy with the teacher and staff which always help me
+          with whatever i need. also the staff is very friendly</p><br>
+        <h class="shh">--mali yash (99.8)</h><br>
+        <h style="font-size: 30px; color: rgba(100,200,200,1);">&bdquo;</h><br><br>
+      </div>
+    </div>
+  </div>
+
+  <!--footer-->
+  <footer class="footer">
+    <div class="fc">
+      <div class="row">
+        <div class="col">
+          <h4>SWAPNPURTI CLASSES</h4>
+          <ul class="ul">
+            <li><a href="index.html">home</a></li>
+            <li><a href="about.html">About us</a></li>
+            <li><a href="Students corner.html">student corner</a></li>
+            <li><a href="photos.html">photos</a></li>
+            <li><a href="Feedback.html">Feedback</a></li>
+          </ul>
+        </div>
+        <div class="col">
+          <h4>SWAPNPURTI CLASSES</h4>
+          <ul class="ul">
+            <li><a href="#">Addmision form</a></li>
+            <li><a href="#">Pay fees</a></li>
+            <li><a href="#">feedback</a></li>
+          </ul>
+        </div>
+        <div class="col">
+          <h4>Contact us</h4>
+          <div class="sol">
+            <h>SWAPNPURTI CLASSES</h>
+            <h>Near DK stop, malegaon,nashik.</h><br>
+
+            <h>Phone number-87674246**</h><br>
+            <h>Email-swapnpurticlasses@gmail.com</h>
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
+</body>
+
+</html>

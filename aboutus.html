@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>About us</title>
+  <link rel="stylesheet" href="css/navbar.css">
+  <link rel="stylesheet" href="css/about.css">
+  <link rel="stylesheet" href="css/footera.css">
+</head>
+
+<body>
+
+  <!--top function button-->
+  <button onclick="topFunction()" id="myBtn" title="Go to top">Top</button>
+
+  <script>
+    //Get the button
+    var mybutton = document.getElementById("myBtn");
+
+    // When the user scrolls down 20px from the top of the document, show the button
+    window.onscroll = function () { scrollFunction() };
+
+    function scrollFunction() {
+      if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+        mybutton.style.display = "block";
+      } else {
+        mybutton.style.display = "none";
+      }
+    }
+    // When the user clicks on the button, scroll to the top of the document
+    function topFunction() {
+      document.body.scrollTop = 0;
+      document.documentElement.scrollTop = 0;
+    }
+  </script>
+
+  <nav class="navbar">
+    <!-- LOGO -->
+    <div class="logo">SWAPNPURTI CLASSES</div>
+    <!-- NAVIGATION MENU -->
+    <ul class="nav-links">
+      <!-- USING CHECKBOX HACK -->
+      <input type="checkbox" id="checkbox_toggle" />
+      <label for="checkbox_toggle" class="hamburger">&#9776;</label>
+      <!-- NAVIGATION MENUS -->
+      <div class="menu">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="aboutus.html">About</a></li>
+        <li class="services">
+          <a href="#">Students corner</a>
+          <!-- DROPDOWN MENU -->
+          <ul class="dropdown">
+            <li><a href="#">Addmision form</a></li>
+            <li><a href="#">Pay fees</a></li>
+            <li><a href="#">feedback form</a></li>
+          </ul>
+        </li>
+        <li><a href="photos.html">photos</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </div>
+    </ul>
+  </nav>
+
+  <!--About unitted classes-->
+  <div class="aboutus">
+    <div class="left">
+      <img class="img" src="img/logo.png">
+    </div>
+    <div class="rigth">
+      <h class="ucc">SWAPNPURTI CLASSES</h>
+      <P class="uccp">We aim to redefine a student life with grace and confidence. we aim to impart education with
+        befitting practices,
+        to include good working habits, imbible suitable social and cultural values.</P>
+      <p class="uccp"> We believe that every student has tremendous potiential which may be different but is unique of
+        it's own kind.
+        it is very important to identify student's interest correctly nurture and develop it and make career selection
+        based on it.
+        it is required to achive the golden mean amongest the criteria like personality, scope & economy.
+        <br>keeping all these things in mind, career guidance seminars are arranged by swapnpurti classes. Such career
+        guidance seminars play an important role in choosing the right career for the student.
+      </p>
+    </div>
+  </div>
+
+  <!--who we are-->
+  <div class="wwa">
+    <div class="wwaid">
+      <img class="wwai" src="img/ccc.jpg">
+    </div>
+    <div class="wwah">
+      <h class="qw">WHO WE ARE</h>
+      <p class="uccp1">Dear Students, Welcome to Swapnpurti Classes, We are delighted to introduce you to an entire new
+        Revolutionary approach of, highly scientific, Innovative Coaching institute in Pune.</p>
+      <h class="wwah2">Swapnpurti Classes is the only Institute with students as a center philosophy with our every
+        activity and planning.</h>
+      <br><br>
+      <p class="uccp">We know that success in board as well as in competitive examinations like JEE, NEET, MH-CET, &
+        many more lies in understanding basic fundas, practicing them hard & their application in exams.
+        So we focus on feeding roots & making your foundation strong. Our vast experience of teaching thousands of
+        students reveals that one can easily crack 10th & 12th Board Exam & other Entrance Examinations.</p>
+    </div>
+  </div>
+
+  <!--Achievement-->
+  <div class="achivement">
+    <div class="pop">
+      <img class="pop1" src="img/pop.jpg">
+    </div>
+    <div class="pop2">
+      <h class="ach">ACHIEVEMENT</h>
+      <p class="uccp1">But it needs perfect planning + consistent hard work + perfect study material + correct guidance
+        to have wininng edge. We understand this fact very well.
+        Hence we have designed our academic program in a scientific manner that develops problem solving skills, short
+        cuts, use mnemonics and proper time management which helps to prepare you to face entrance examinations with
+        confidence.</p>
+      <div class="poi">
+        <div class="poi1">
+          <h1 class="pp">9.28%</h1>
+          <h>Increase in montly</h>
+        </div>
+        <div class="poi2">
+          <h1 class="pp">5.45%</h1>
+          <h> Market down yearly</h>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!--footer-->
+  <footer class="footer">
+    <div class="fc">
+      <div class="row">
+        <div class="col">
+          <h4>SWAPNPURTI CLASSES</h4>
+          <ul class="ul">
+            <li><a href="index.html">home</a></li>
+            <li><a href="aboutus.html">About us</a></li>
+            <li><a href="photos.html">photos</a></li>
+            <li><a href="Feedback.html">Feedback</a></li>
+          </ul>
+        </div>
+        <div class="col">
+          <h4>SWAPNPURTI CLASSES</h4>
+          <ul class="ul">
+            <li><a href="#">Addmision form</a></li>
+            <li><a href="#">Pay fees</a></li>
+            <li><a href="#">feedback</a></li>
+          </ul>
+        </div>
+        <div class="col">
+          <h4>Contact us</h4>
+          <div class="sol">
+            <h>SWAPNPURTI CLASSES</h>
+            <h>Near DK stop, malegaon,nashik.</h><br>
+
+            <h>Phone number-87674246**</h><br>
+            <h>Email-swapnpurticlasses@gmail.com</h>
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+</body>
+
+</html>
